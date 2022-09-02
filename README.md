@@ -30,23 +30,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Prasenjit-3433/Custom-Video-Player">
+  <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game">
     <img src="player.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Custom Video Player</h3>
+<h3 align="center">Spock Rock Game</h3>
 
   <p align="center">
     A JavaScript based Spock Rock Game feat. Confetti.js, Modules
     <br />
-    <a href="https://github.com/Prasenjit-3433/Custom-Video-Player"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://videoplayerinjs.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/Prasenjit-3433/Custom-Video-Player/issues">Report Bug</a>
+    <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Prasenjit-3433/Custom-Video-Player/issues">Request Feature</a>
+    <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game/issues">Request Feature</a>
   </p>
 </div>
 
@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## 🙋 About The Project
 
- ![Screenshot](demo.gif)
+ ![Screenshot]()
 
 
 
@@ -103,6 +103,7 @@ Flash-based players have become less popular now and HTML5 video players have be
 * ![HTML](https://img.shields.io/badge/HTML5-f06529?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS](https://img.shields.io/badge/CSS3-2965f1?style=for-the-badge&logo=CSS3&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/JavaScript-F0DB4F?style=for-the-badge&logo=JavaScript&logoColor=323330)
+* ![Confetti.js](confetti.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,18 +135,31 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## 🏗️ Implementation
 
-* First of all, we added an SVG as a hero image because an svg can scale upto any size according as the size of the viewport.
-* Then added a video element with attribute `playsinline` which gonna prevent the video to be played in full screen mode by default on mobile views.
+* First of all, we need to gather all `functional requirements` of the game like:
+<details>
+  <summary>See</summary>
+  <ol>
+    <li>Two players play the game by each picking a symbol randomly: the selected symbols determine who the winner is.</li>
+    <li>
+      <p>The allowed moves are Paper, Rock, Scissors, Lizard, Spock and they interact as follows:        
+      “Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, rock crushes scissors.”</p>
+    </li>
+    <li>If both players pick the same symbol, your application will not select a winner and declare the game a tie</li>
+  </ol>
+  ![](functions.jpg)
+</details>
+
+* Then break the whole game into small `Ui Components` & start building indivisual components.
 <details>
 <summary>Ui Components:</summary>
 <ol>
 <li>
     <details>
-      <summary>Play Icon, Video, Mobile Responsiveness.</summary>
+      <summary>Player Containers, FontAwesome Icons.</summary>
       <ul>
-        <li>Making `video` element to take `min-width: 800px` & `max-width: 80vw` and on large smart phone (600px or less), `min-width: 0` & `max-width: 90%`.</li>
-        <li>On the click on `play-icon` or on the video, the video starts playing and `play-icon` turn into `pause-icon` & vice-versa. Also, when the current playlist is ended i.e. when `ended` event fires, `pause-icon` turn into `play-icon`.</li>
-        <li>Also, on the click at different position on Volume Bar, it'll change current volume. To do that, extract `offsetX` & `offsetWidth` value from Volume Bar element and calculate the percentage of `offsetX` in `offsetWidth`, then update `width` of volume-bar & Change `volume-icon` accordingly.</li>
+        <li>The whole game'll be inside of a container which receives certain width on different viewports.</li>
+        <li>There'll be two players: User & Computer.</li>
+        <li>The icons are outsourced from FontAwesome's regular icon collection & Each icon represents a player's move </li>
       </ul>
     </details>
   </li>
@@ -192,7 +206,7 @@ _To see in action, please visit to the [Link](https://videoplayerinjs.netlify.ap
 - [ ] Easy to style: Designed to be a reliable and consistent base to build on top of. The player looks great out of the box, but can be easily styled with a little bit of extra CSS.
 - [ ] Supported everywhere: Your video should work everywhere your app does. The team makes an effort to support every modern browser we can, including desktop and mobile.
 
-See the [open issues](https://github.com/Prasenjit-3433/Custom-Video-Player/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Prasenjit-3433/Spock-Rock-Game/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,7 +244,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Prasenjit Sutradhar - [@twitter_handle](https://twitter.com/twitter_handle) - prasenjitsutradhar3433@gmail.com
 
-Project Link: [https://github.com/Prasenjit-3433/Custom-Video-Player](https://github.com/Prasenjit-3433/Custom-Video-Player)
+Project Link: [https://github.com/Prasenjit-3433/Spock-Rock-Game](https://github.com/Prasenjit-3433/Spock-Rock-Game)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -249,16 +263,16 @@ Project Link: [https://github.com/Prasenjit-3433/Custom-Video-Player](https://gi
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Prasenjit-3433/Custom-Video-Player.svg?style=for-the-badge
-[contributors-url]: https://github.com/Prasenjit-3433/Custom-Video-Player/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Prasenjit-3433/Custom-Video-Player.svg?style=for-the-badge
-[forks-url]: https://github.com/Prasenjit-3433/Custom-Video-Player/network/members
-[stars-shield]: https://img.shields.io/github/stars/Prasenjit-3433/Custom-Video-Player.svg?style=for-the-badge
-[stars-url]: https://github.com/Prasenjit-3433/Custom-Video-Player/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Prasenjit-3433/Custom-Video-Player.svg?style=for-the-badge
-[issues-url]: https://github.com/Prasenjit-3433/Custom-Video-Player/issues
-[license-shield]: https://img.shields.io/github/license/Prasenjit-3433/Custom-Video-Player.svg?style=for-the-badge
-[license-url]: https://github.com/Prasenjit-3433/Custom-Video-Player/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
+[contributors-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
+[forks-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/network/members
+[stars-shield]: https://img.shields.io/github/stars/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
+[stars-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
+[issues-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/issues
+[license-shield]: https://img.shields.io/github/license/Prasenjit-3433/Spock-Rock-Game.svg?style=for-the-badge
+[license-url]: https://github.com/Prasenjit-3433/Spock-Rock-Game/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://in.linkedin.com/
 [product-screenshot]: images/screenshot.png
