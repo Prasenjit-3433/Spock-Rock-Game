@@ -147,8 +147,9 @@ This is an example of how to list things you need to use the software and how to
       <li>If both players pick the same symbol, your application will not select a winner and declare the game a tie</li>
     </ol>
   </details>
-  
-![game-cycle](game-cycle.jpg)
+<div align="center">
+<img src="game-cycle.jpg" alt="Game-logo">
+</div> 
 
 * Then break the whole game into small `Ui Components` & start building indivisual components.
 <details>
@@ -173,19 +174,21 @@ This is an example of how to list things you need to use the software and how to
       <summary>Player's Move Icon</summary>
       <ul>
         <li>For user's selection, when user click on an icon, it's color turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
-        <li>Before allowing user to click again, the game board automatically reset previous choices of both player and computer.</li>
-        <li>Here "Switch Statement" is used to implement such feature.</li>
         <li>For computer's choice, generate a number between 0 & 1 and divided whole (0, 1) interval into 5 parts - each of width 0.2. According as where does the generated number lie, we assign one from 'rock', 'paper', 'scissors', 'lizard', 'spock' respectively.</li>
+        <li>Once computer chooses it's move, the respected icon's color on the game board turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
+        <li>Before allowing user to click again, the game board automatically reset previous choices of both player and computer.</li>
+        <li>Here "Switch Statement" is used to implement such feature in both cases.</li>
       </ul>
     </details>
     </li>
   <li>
     <details>
-      <summary>Progress Bar - width-increment, hover-effect</summary>
+      <summary>Determining Winner!</summary>
       <ul>
-        <li>A progress-bar consists of two parts: the `progress-range` & the `progress-bar` itself. We used `calc()` CSS function to set width of `progress-range` and added some `animation` on hover as the `thikness` increases!.</li>
-        <li> On the fire of `canPlay`, `timeupdate` events, the values of these properties `currentTime`, `duration` extracted from `video` element and calculated percentage of `currentTime` in `duration` & set it as `width` of Progress-Bar. Followed by `time-elapsed`, `total-duration` update.</li>
-        <li>Also, on the click at different position on progress bar, it'll change current playback position. To do that, extract `offsetX` & `offsetWidth` value from Progress Bar element and calculate the percentage of `offsetX` in `offsetWidth`along `duration`, then update `width` of progress-bar, `time-elapsed`, `total-duration` etc.</li>
+        <li>First of all, it's very crucial to choose a right data structure to hold choices.</li>
+        <li><img src="choice-ds.png" alt="Choice-Data-Structure" align="center"></li>
+        <li>If Player's choice holds Computer's choice, then player wins. Otherwise Computer wins.</li>
+        <li>Finally, update the score of both player & computer in the game board.</li>
       </ul>
     </details>
   </li>
