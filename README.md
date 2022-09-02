@@ -148,7 +148,7 @@ This is an example of how to list things you need to use the software and how to
     </ol>
   </details>
   
-![game-cycle](functions.jpg)
+![game-cycle](game-cycle.jpg.jpg)
 
 * Then break the whole game into small `Ui Components` & start building indivisual components.
 <details>
@@ -175,7 +175,7 @@ This is an example of how to list things you need to use the software and how to
         <li>For user's selection, when user click on an icon, it's color turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
         <li>Before allowing user to click again, the game board automatically reset previous choices of both player and computer.</li>
         <li>Here "Switch Statement" is used to implement such feature.</li>
-        <li>For computer's choice, generate a number between 0 & 1 and divided whole (0, 1) interval into 5 parts - each of width 0.2. According as where the generated number lies, we assign one from 'rock', 'paper', 'scissors', 'lizard', 'spock' respectively.</li>
+        <li>For computer's choice, generate a number between 0 & 1 and divided whole (0, 1) interval into 5 parts - each of width 0.2. According as where does the generated number lie, we assign one from 'rock', 'paper', 'scissors', 'lizard', 'spock' respectively.</li>
       </ul>
     </details>
     </li>
