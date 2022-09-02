@@ -148,7 +148,7 @@ This is an example of how to list things you need to use the software and how to
     </ol>
   </details>
   
-![game-cycle](game-cycle.jpg.jpg)
+![game-cycle](game-cycle.jpg)
 
 * Then break the whole game into small `Ui Components` & start building indivisual components.
 <details>
