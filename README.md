@@ -137,12 +137,12 @@ This is an example of how to list things you need to use the software and how to
 
 * First of all, we need to gather all `functional requirements` of the game like:
 *  <details>
-    <summary>Functional Requirements</summary>
+    <summary>Functional Requirements:</summary>
     <ol>
       <li>Two players play the game by each picking a symbol randomly: the selected symbols determine who the winner is.</li>
       <li>
         <p>The allowed moves are Paper, Rock, Scissors, Lizard, Spock and they interact as follows:        
-        “Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, rock crushes scissors.”</p>
+           “Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, rock crushes scissors.”</p>
       </li>
       <li>If both players pick the same symbol, your application will not select a winner and declare the game a tie</li>
     </ol>
