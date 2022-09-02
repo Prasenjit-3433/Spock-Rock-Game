@@ -156,20 +156,26 @@ This is an example of how to list things you need to use the software and how to
 <ol>
 <li>
     <details>
-      <summary>Player Containers, FontAwesome Icons.</summary>
+      <summary>Game Board</summary>
       <ul>
-        <li>The whole game'll be inside of a container which receives certain width on different viewports.</li>
+        <li>The whole game'll be inside of a Game-Board which receives certain width on different viewports.</li>
         <li>There'll be two players: User & Computer.</li>
         <li>The icons are outsourced from FontAwesome's regular icon collection & Each icon represents a player's move </li>
+        <li>The player container divided into two sections - one for User & one for computer.</li>
+        <li>Each section'll contain "player-name" followed by "score" and then "name-of-the-choice" the player selects. </li>
+        <li>Next, all the "move-icons" sits in line.</li>
       </ul>
     </details>
   </li>
   </li>
   <li>
     <details>
-      <summary>Controls HTML, Show controls on hover</summary>
+      <summary>Player's Move Icon</summary>
       <ul>
-        <li>By default, `control-container` has `opacity` 0 but when hover over it, it'll get opacity of 1 and added animation of style `ease-out` with delay of 2s.</li>
+        <li>For user's selection, when user click on an icon, it's color turns into black & updates the "name-of-the-choice" portion from "choice" (by-default) to the selected one.</li>
+        <li>Before allowing user to click again, the game board automatically reset previous choices of both player and computer.</li>
+        <li>Here "Switch Statement" is used to implement such feature.</li>
+        <li>For computer's choice, generate a number between 0 & 1 and divided whole (0, 1) interval into 5 parts - each of width 0.2. According as where the generated number lies, we assign one from 'rock', 'paper', 'scissors', 'lizard', 'spock' respectively.</li>
       </ul>
     </details>
     </li>
