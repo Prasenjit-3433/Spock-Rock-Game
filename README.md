@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game">
-    <img src="player.png" alt="Logo" width="80" height="80">
+    <img src="images/rock-paper-scissors.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Spock Rock Game</h3>
@@ -42,7 +42,7 @@
     <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://videoplayerinjs.netlify.app/">View Demo</a>
+    <a href="https://spockrockjsgame.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Prasenjit-3433/Spock-Rock-Game/issues">Report Bug</a>
     ·
@@ -83,16 +83,16 @@
 <!-- ABOUT THE PROJECT -->
 ## 🙋 About The Project
 
- ![Screenshot]()
+ ![Screenshot](images/demo.gif)
 
 
 
 
 
 
-When looking for an online video player for your website, you might hear the names YouTube and Vimeo before any else. That’s because these are quick, easy, and free options readily available to you. However, if you want more control over your video assets, how they are displayed, and want to learn how users interact with your content and engage with it, you might need a private HTML5 video player.
+Rock Paper Scissors Lizard Spock is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla. Sam Kass explains he created the expanded game because it seemed like most games of Rock Paper Scissors with people you know would end in a tie. Rock Paper Scissors Lizard Spock was first mentioned in the Season 2 episode, The Lizard-Spock Expansion, the title of which references the game.
 
-Flash-based players have become less popular now and HTML5 video players have become the new industry standard. For facilitating seamless integration on your website, this is suggested best online video player for you! :smile:
+There is also a Confetti falling animation across the screen over the win. Just play & enjoy! :smile:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +125,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. First of all install `Live Server` extension by `Ritwick Dey`.
 2. Once the extension was installed, then `right-click` on `index.html` and select `Open with Live Server`.
-3. It'll open a new tab in browser & start serving the video player. Enjoy!.
+3. It'll open a new tab in browser & start serving the game. Enjoy!.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -210,20 +210,7 @@ This is an example of how to list things you need to use the software and how to
 </ol>
 </details>
 
-_To see in action, please visit to the [Link](https://videoplayerinjs.netlify.app/)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## 💎 Features
-
-- [ ] Plays anything: Plays “traditional” file formats such as MP4 and WebM, but also supports adaptive streaming formats such as HLS and DASH. There’s even a special UI for live streams!
-- [ ] Easy to style: Designed to be a reliable and consistent base to build on top of. The player looks great out of the box, but can be easily styled with a little bit of extra CSS.
-- [ ] Supported everywhere: Your video should work everywhere your app does. The team makes an effort to support every modern browser we can, including desktop and mobile.
-
-See the [open issues](https://github.com/Prasenjit-3433/Spock-Rock-Game/issues) for a full list of proposed features (and known issues).
+_To see in action, please visit to the [Link](https://spockrockjsgame.netlify.app/)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -271,7 +258,7 @@ Project Link: [https://github.com/Prasenjit-3433/Spock-Rock-Game](https://github
 ## ✌️ Acknowledgments
 
 * [Fontawesome](https://fontawesome.com/)
-* [Pixabay.com -- Free Videos](https://pixabay.com/videos/)
+* [Confett.js](https://www.cssscript.com/confetti-falling-animation/)
 * [Heropatterns - SVG Background](https://heropatterns.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
