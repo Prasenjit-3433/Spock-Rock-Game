@@ -103,7 +103,7 @@ Flash-based players have become less popular now and HTML5 video players have be
 * ![HTML](https://img.shields.io/badge/HTML5-f06529?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS](https://img.shields.io/badge/CSS3-2965f1?style=for-the-badge&logo=CSS3&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/JavaScript-F0DB4F?style=for-the-badge&logo=JavaScript&logoColor=323330)
-* ![Confetti.js](confetti.png)
+* ![Confetti.js](images/confetti.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +148,7 @@ This is an example of how to list things you need to use the software and how to
     </ol>
   </details>
 <div align="center">
-<img src="game-cycle.jpg" alt="Game-logo">
+<img src="images/game-cycle.jpg" alt="Game-logo">
 </div> 
 
 * Then break the whole game into small `Ui Components` & start building indivisual components.
@@ -186,7 +186,7 @@ This is an example of how to list things you need to use the software and how to
       <summary>Determining Winner!</summary>
       <ul>
         <li>First of all, it's very crucial to choose a right data structure to hold choices:</li>
-        <li><img src="choice-ds.png" alt="Choice-Data-Structure" align="center"></li>
+        <li><img src="images/choice-ds.png" alt="Choice-Data-Structure" align="center"></li>
         <li>Corresponding to the player's choice, if defeats array inside of that choice contains Computer's choice, then player wins. Otherwise Computer wins.</li>
         <li>Finally, update the score of both player & computer in the game board.</li>
       </ul>
@@ -194,9 +194,16 @@ This is an example of how to list things you need to use the software and how to
   </li>
   <li>
   <details>
-      <summary>Playback Speed Dropdown</summary>
+      <summary>Confetti falling animation over Win</summary>
     <ul>
-        <li>On change of playback speed, the `change` event fires on `select` element and then `playbackRate` property on video element is set to selected value of Playback Speed Dropdown.</li>
+        <li>Here we used confetti.js, a vanilla JS library for creating a configurable, high-performance confetti falling animation using HTML5 canvas and requestAnimFrame API.</li>
+        <li>The confetti.js is modified little bit to bring the code under anonymous function into global scope. So that these three functions: 'startConfetti', 'stopConfetti', 'removeConfetti' become globally available.</li>
+        <li>The good news is that modern browsers have started to support module functionality natively. This can only be a good thing — browsers can optimize loading of modules, making it more efficient than having to use a library and do all of that extra client-side processing and extra round trips.</li>
+        <li>In order to do that, firstly we have to export the above three specified functions & import them inside main script file. Then execute main script file as the top-level module: </li>
+        <li><img src="images/module-execution.png" alt="Module Execution" align="center"></li>
+        <li>But type="module" makes main script self-contained. That means the main script no longer shares in global scope with the elements in index.html</li>
+        <li>To make things globally available, pass it into Window object like this: </li>
+        <li><img src="images/global-object.png" alt="Global Scope" align="center"></li>
       </ul>
     </details>
   </li>

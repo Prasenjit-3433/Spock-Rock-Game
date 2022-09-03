@@ -1,3 +1,5 @@
+import {startConfetti, stopConfettiInner, removeConfettiInner} from './modules/confetti.js';
+
 const playerScoreElement = document.getElementById('playerScore');
 const playerChoiceElement = document.getElementById('playerChoice');
 const computerScoreElement = document.getElementById('computerScore');
@@ -35,6 +37,8 @@ let computerChoice = '';
 // Reset all 'selected' icons
 function resetSelected() {
   allGameIcons.forEach((icon) => {icon.classList.remove('selected')});
+  stopConfettiInner();
+  removeConfettiInner();
 }
 
 // Reset scores & playerChoice/computerChoice
@@ -49,6 +53,8 @@ function resetAll() {
   resultText.textContent = '';
   resetSelected();
 }
+// We're passing our `select` function into our window parent so that we can call it now from index.html
+window.resetAll = resetAll;
 
 // Random Computer choice
 function computerRandomChoice() {
@@ -102,6 +108,7 @@ function updateScore(playerChoice) {
   }else {
     const choice = choices[playerChoice]['defeats'];
     if (choice.includes(computerChoice)) {
+      startConfetti();
       resultText.textContent = 'You Won!';
       playerScoreNumber++;
       playerScoreElement.textContent = playerScoreNumber;
@@ -151,6 +158,8 @@ function select(playerChoice) {
   }
   
 }
+// We're passing our `select` function into our window parent so that we can call it now from index.html
+window.select = select;
 
 // On Load 
 resetAll();
