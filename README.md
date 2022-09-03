@@ -119,7 +119,7 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 * Live Server Extension
-  ![Live-Server](Screenshot%202022-08-30%20133644.png)
+  ![Live-Server](images/liveserver.png)
 
 ### Installation
 
@@ -183,7 +183,7 @@ This is an example of how to list things you need to use the software and how to
     </li>
   <li>
     <details>
-      <summary>Determining Winner!</summary>
+      <summary>Determining Winner</summary>
       <ul>
         <li>First of all, it's very crucial to choose a right data structure to hold choices:</li>
         <li><img src="images/choice-ds.png" alt="Choice-Data-Structure" align="center"></li>
