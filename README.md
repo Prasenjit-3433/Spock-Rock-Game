@@ -185,9 +185,9 @@ This is an example of how to list things you need to use the software and how to
     <details>
       <summary>Determining Winner!</summary>
       <ul>
-        <li>First of all, it's very crucial to choose a right data structure to hold choices.</li>
+        <li>First of all, it's very crucial to choose a right data structure to hold choices:</li>
         <li><img src="choice-ds.png" alt="Choice-Data-Structure" align="center"></li>
-        <li>If Player's choice holds Computer's choice, then player wins. Otherwise Computer wins.</li>
+        <li>Corresponding to the player's choice, if defeats array inside of that choice contains Computer's choice, then player wins. Otherwise Computer wins.</li>
         <li>Finally, update the score of both player & computer in the game board.</li>
       </ul>
     </details>
