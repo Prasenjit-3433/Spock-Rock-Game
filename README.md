@@ -70,7 +70,6 @@
       </ul>
     </li>
     <li><a href="#implementation">Implementation</a></li>
-    <li><a href="#feature">Features</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
