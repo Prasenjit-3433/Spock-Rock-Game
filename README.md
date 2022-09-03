@@ -82,8 +82,10 @@
 <!-- ABOUT THE PROJECT -->
 ## 🙋 About The Project
 
- ![Screenshot](images/demo.gif)
-
+<!--  ![Screenshot](images/demo.gif) -->
+<p align="center">
+  <img src="images/demo.gif" alt="animated" />
+</p>
 
 
 
